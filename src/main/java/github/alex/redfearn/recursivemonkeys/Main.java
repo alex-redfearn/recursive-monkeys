@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
-    List<Paint> body = new ArrayList<>();
-    body.add(new Paint("Red"));
-    body.add(new Paint("Green"));
-    body.add(new Paint("Yellow"));
+    List<String> body = new ArrayList<>();
+    body.add("paint");
+    body.add("paint");
+    body.add("paint");
 
     BodyPaint.check(body);
   }
