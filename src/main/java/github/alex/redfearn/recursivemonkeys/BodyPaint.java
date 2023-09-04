@@ -1,16 +1,20 @@
 package github.alex.redfearn.recursivemonkeys;
 
+import java.util.List;
+
 public class BodyPaint {
 
-  public static void play(int loop) {
-
-    if (loop > 0) {
+  public static void check(List<Paint> body) {
+    if (!body.isEmpty()) {
       System.out.println("There's still a trace of body paint");
       System.out.println("On your legs and on your arms and on your face");
 
-      play(loop - 1);
+      wash(body);
+      check(body);
     }
-
   }
 
+  private static void wash(List<Paint> body) {
+    body.remove(0);
+  }
 }
